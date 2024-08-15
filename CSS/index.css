@@ -1,0 +1,131 @@
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body{
+    margin:0;
+}
+.background {
+    background-color:hsl(217, 54%, 11%);
+    display: flex;
+    padding: 150px;
+}
+.foreground {
+    background-color: hsl(216, 50%, 16%);
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 0 hsl(216, 54%, 14%); /*-- testing out the shadow in the original webpage */
+}
+.item p{
+    display: inline-block;
+    text-align: left;
+    
+}
+p{
+    font-size: 18px;
+    color:hsl(215, 51%, 70%);
+}
+.time{
+    text-align: right;
+    float: right;
+}
+.left-element{
+    color: hsl(178, 100%, 50%);
+}
+.left-element svg{
+    margin-top: -3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.time svg{
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+.resized-image {
+    width: 400px; /* to set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensures it's above the image but below the SVG */
+}
+.image-container:hover .hover-overlay {
+    opacity: 0.5; 
+}
+.hover-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Ensures it's above the overlay*/
+}
+.image-container:hover .hover-svg {
+    opacity: 1;
+    color: hsl(178, 100%, 50%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+.centered-line-container {
+    text-align: center; /* Center the line within the container */
+    margin: 10px 0; /* Adjust vertical spacing as needed */
+}
+.centered-line {
+    width: 100%; /* Set the width of the line */
+    margin: 0 auto; /* Center the line horizontally */
+    border: none; /* Remove the default border */
+    border-top: 1px solid hsl(215, 32%, 27%);
+    background-color: hsl(215, 32%, 27%);
+}
+.last-p {
+    text-align: center;
+    margin-bottom: -300px;
+    margin-right: 150px;
+    font-size: 18px;
+    display: inline-block;
+    align-items: center;
+}
+.last-p img{
+    height: auto;
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    float: left;
+    margin-top: -10px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.jules{
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    margin-left: -140px;
+}
+.jules:hover  {
+    color: hsl(178, 100%, 50%);
+}
+.balance:hover {
+    color: hsl(178, 100%, 50%);
+}
